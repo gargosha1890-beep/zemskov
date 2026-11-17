@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://gargosha1890.sourcecraft.site/zemskovv/sitemap.xml
