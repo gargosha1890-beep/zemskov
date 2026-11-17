@@ -1,0 +1,17 @@
+# SourceCraft CI: при каждой загрузке в main запускается flow «site»
+# и выводит ссылку на опубликованный сайт.
+on:
+  push:
+    - workflows: site
+      filter:
+        branches: ["main"]
+
+workflows:
+  site:
+    tasks:
+      - name: publish
+        cubes:
+          - name: site-link
+            script:
+              - echo "Сайт публикуется SourceCraft Sites из ветки main, обновление занимает несколько минут."
+              - echo "Ссылка на сайт: https://gargosha1890.sourcecraft.site/zemskovv/"

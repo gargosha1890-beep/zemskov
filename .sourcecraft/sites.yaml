@@ -1,0 +1,6 @@
+# SourceCraft Sites: публикация сайта из корня репозитория, ветка main.
+# После каждой загрузки в main сайт обновляется сам через несколько минут.
+# Адрес: https://gargosha1890.sourcecraft.site/zemskovv/
+site:
+  root: "."
+  ref: main
