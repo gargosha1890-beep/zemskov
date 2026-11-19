@@ -1,0 +1,30 @@
+# Заголовки для Netlify и Cloudflare Pages.
+
+# безопасность для всех страниц
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# страница и файлы для поисковиков обновляются сразу после загрузки
+/
+  Cache-Control: no-cache
+/index.html
+  Cache-Control: no-cache
+/robots.txt
+  Cache-Control: no-cache
+/sitemap.xml
+  Cache-Control: no-cache
+
+# песни, ролики, картинки и иконки кэшируются на неделю
+/audio/*
+  Cache-Control: public, max-age=604800
+/video/*
+  Cache-Control: public, max-age=604800
+/img/*
+  Cache-Control: public, max-age=604800
+
+# шрифты не меняются — кэш на год
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
